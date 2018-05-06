@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+	<title>Form Wizzard</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="form wizzard" />
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/ui.totop.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/form-wizzard.css">
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand raleway" href="index.html">Form Wizzard</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#">HOME</a></li>
+                    <li><a href="#">Check Quizzes</a></li>
+                    <li><a href="#">View Statistics</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+	<div class="headerBgImage">
+		<img class="bgImage" src="assets/img/nox2.jpg">
+		<div class="imgOverlay"></div>
+		<div class="container">
+			<h1>Manage form quizzes</h1>
+			<span>
+				<h4>Easy modular quizzes</h4>
+				<h4>In group of 3s</h4>
+			</span>
+			<h5>check out and test responses</h5>
+
+			<div class="input-group btnSubscribe">
+			   <input type="text" class="form-control" placeholder="Email">
+			   <span class="input-group-btn">
+			   		<button class="btn btn-default" type="button">
+			        	Continue
+			    	</button>
+			   </span>
+			</div>
+			<button type="button" class="btn btn-default btn-circle btnRound">
+				i
+			</button>
+		</div>
+	</div>
+
+	<div class="mainBody" style="margin-top: 20px;">
+		<div class="container">
+			<h1 class="text-center raleway headerText">PLEASE CREATE AN ADMIN PROFILE TO GET STARTED</h1>
+			<h3 class="text-center raleway subheaderText">Fill in <span style="color: #FF73B3;">the form</span> for an admin profile</h3>
+
+			<!-- Care Conatiner Large Device -->
+			<div class="careContainer lgDevice">
+                <div class="row">
+                    <div class="col-sm-4 col-sm-offset-4">
+                        <ul class="nav nav-tabs" id="mode-tab">
+                            <li class="m-active"><a href="#">Admin mode</a></li>
+                            <li><a href="#">Question mode</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+
+                    </div>
+                </div>
+				<div class="row">
+					<div class="col-md-4" id="left-icon">
+						<div class="bodyImage" style="float: left;">
+							<img src="assets/img/linda.jpg">
+						</div>
+					</div>
+                    <div class="col-md-4" style="display: none;" id="quiz-left">
+						<div class="quiz-status" style="float: left;">
+                            <h3>Question Creation mode</h4>
+                            <h4 id="cre-title">Title not set</h4>
+						</div>
+					</div>
+					<div class="col-md-4 signup-form">
+						<div class="bodyForm">
+							<form action="" class="contactForm">
+								<div>
+									<div class="form-group raleway">
+										<label for="username">Username</label>
+										<input type="text" name="username" placeholder="Username" class="admin-web">
+										<div class="good"><i class="fa fa-check"></i></div>
+									</div>
+									<div class="form-group raleway">
+										<label for="password">Password</label>
+										<input type="password" name="password" placeholder="Password" class="admin-web">
+										<div class="good"><i class="fa fa-check"></i></div>
+									</div>
+								</div>
+								<button type="button" class="admin-submit" data-submit="admin-web">
+									Start Creating Quizzes
+								</button>
+							</form>
+                        </div>
+                        <h3 class="text-center raleway subheaderText">Or <span style="color: #FF73B3;"><a class="try-login" data-slide="admin-web-reg" style="cursor: pointer;">click here</a></span> to use an existing admin profile</h3>
+                    </div>
+                    <div class="col-md-4 admin-web-reg" style="display:none;">
+                        <h3>Login to start creating questions</h3>
+                        <div class="bodyForm">
+                            <form action="" class="contactForm">
+                                <div>
+                                    <div class="form-group raleway">
+                                        <label for="username">Username</label>
+                                        <input type="text" name="username" placeholder="Username" class="admin-web-login">
+                                        <div class="good"><i class="fa fa-check"></i></div>
+                                    </div>
+                                    <div class="form-group raleway">
+                                        <label for="password">Password</label>
+                                        <input type="password" name="password" placeholder="Password" class="admin-web-login">
+                                        <div class="good"><i class="fa fa-check"></i></div>
+                                    </div>
+                                </div>
+                                <button type="button" class="admin-login" data-submit="admin-web-login">
+                                    login
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-4 admin-web-quest" style="display:none;">
+                        <br>
+                        <hr>
+                            <ul class="nav nav-tabs" id="mod-tab">
+                                <li class="m-active"><a href="#">Title</a></li>
+                                <li><a href="#">First</a></li>
+                                <li><a href="#">Second</a></li>
+                                <li><a href="#">Third</a></li>
+                            </ul>
+                            <div class="bodyForm">
+                                <form action="" class="contactForm">
+                                    <div>
+                                        <div class="form-group raleway" id="quest-flex">
+                                            <label for="username">Title</label>
+                                            <input type="text" name="title" placeholder="Title" class="admin-quest">
+                                            <div class="good"><i class="fa fa-check"></i></div>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="next-question" data-submit="admin-quest">
+                                        next
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-md-4 admin-web-res" style="display:none;">
+                            <br>
+                            <hr>
+                            <ul class="nav nav-tabs" id="mo-tab">
+                                <li class="m-active"><a href="#">Title</a></li>
+                                <li><a href="#">First</a></li>
+                                <li><a href="#">Second</a></li>
+                                <li><a href="#">Third</a></li>
+                            </ul>
+                            <div class="bodyForm">
+                            </div>
+                        </div>
+					<div class="col-md-4">
+						<div class="bodyImage" style="float: right;">
+							<img src="assets/img/sd.jpg">
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- ./Care Container Large Device -->
+
+			<!-- Care Container Small Device -->
+			<div class="careContainer smDevice">
+				<div class="bodyImageContainer">
+					<div class="bodyImage floatLeft">
+						<img src="assets/img/linda.jpg">
+					</div>
+					<div class="bodyImage floatRight">
+						<img src="assets/img/sd.jpg">
+					</div>
+				</div>
+
+				<!-- <div class="bodyFormContainer"> -->
+					<div class="bodyForm">
+						<form action="quiz.html" class="contactForm">
+							<div>
+								<div class="form-group raleway">
+									<label for="username">Username</label>
+									<input type="text" name="username" placeholder="Username" class="admin-mobile">
+									<div class="good"><i class="fa fa-check"></i></div>
+								</div>
+								<div class="form-group raleway">
+									<label for="password">Password</label>
+									<input type="password" name="password" placeholder="Password" class="admin-mobile">
+									<div class="good"><i class="fa fa-check"></i></div>
+								</div>
+							</div>
+							<button id="admin-submit" data-submit="admin-mobile">
+								Start Creating Quizzes
+							</button>
+						</form>
+					</div>
+				<!-- </div> -->
+
+				<div class="bodyImage xsScreenOnly">
+					<img src="assets/img/sd.jpg">
+                </div>
+                <div id="type-code" style="display:none">
+                    <label for="password">Question type</label>
+                    <select id="type-inp" name="type" class="admin-quest-type">
+                        <option value="blank">Select question type</option>
+                        <option value="0">short questions</option>
+                        <option value="1">multiple choice</option>
+                        <option value="2">Multiple check</option>
+                        <option value="3">Yes or No</option>
+                    </select> 
+                </div>
+                <div class="hidden">
+                <div class="form-group raleway" id="short-quest">
+                        <label for="question">Question</label>
+                        <input id="u-quest" type="text" name="question" placeholder="Enter question" class="">
+                        <div class="good"><i class="fa fa-check"></i></div>
+                        <input type="hidden" name="q_type" id="q_type">
+                </div>
+                <div class="hidden">
+                    <div class="raleway" id="res-list" style>
+                        <h3>Click on a question to answer it</h3>
+                        <ul id="res-ul">
+                        </ul>
+                    </div>
+                </div>
+                <div id="short-res">
+                    <div class="form-group raleway">
+                        <h3>Click on a question to answer it</h3>
+                        <br>
+                        <label for="question">Response</label>
+                        <input id="u-res" type="text" name="question" placeholder="Enter response" class="">
+                        <div class="good"><i class="fa fa-check"></i></div>
+                        <input type="hidden" name="q_type" id="q_type">
+                    </div>
+                    <button type="button" class="next-response" data-submit="admin-res">
+                            next
+                    </button>
+                </div>
+                <div class="raleway" id="res-intro" style>
+                    <br>
+                        <h3 class="text-center">Click on a question to answer it</h3>
+                        <br>
+                        <button id="res-begin">
+								submit your response
+							</button>
+                    </div>
+            </div>
+			</div>
+			<!-- ./Care Container Small Device -->
+
+		</div>
+	</div>
+
+
+	<footer class="footer" style="background: #FF73B3; margin-top: 30px;">
+		<div class="container" style="padding-top: 30px; padding-bottom: 30px; color: #fff;">
+			<h4 style="font-family: 'Raleway', sans-serif; font-weight: bold; display: inline; margin-right: 20px;">AboutTheFit</h4>
+			<p style="display: inline;">&copy; Copyright 2018, All rights reserved.</p>
+		</div>
+
+		
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
+		<!-- <script type="text/javascript" src="js/aboutTheFit.js"></script> -->
+		<script type="text/javascript" src="js/jquery.ui.totop.js"></script>
+        <script type="text/javascript" src="js/easing.js"></script>
+        <script src="js/sweetalert.js"></script>
+        <script src="js/local-storage.min.js"></script>
+        <script src="js/form-wizzard.js"></script>
+	</footer>
+
+</body>
+
+
+</html>
